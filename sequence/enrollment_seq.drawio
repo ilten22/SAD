@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2024-01-22T15:26:37.969Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.18" etag="KBqoDOQbAiarnMHTf0zV" type="github">
+  <diagram name="Page-1" id="LhgQc3NdScNCsLA6Z6dy">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry width="150" height="922" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="283" width="150" height="922" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="65" y="441" width="378" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="[Information verified]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="4">
+          <mxGeometry x="30" width="348" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="[Information not verified]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="4">
+          <mxGeometry y="185" width="378" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="55" y="209" width="411" height="618" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="[Slots available]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="7">
+          <mxGeometry x="30" width="381" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="[Slots not available]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="7">
+          <mxGeometry y="525" width="411" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Send enrollment request" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Check for available slots" style="curved=1;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="408" y="159" />
+              <mxPoint x="408" y="189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Confirm enrollment" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="287" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Provide necessary information" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="339" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Verify provided information" style="curved=1;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="408" y="391" />
+              <mxPoint x="408" y="421" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Reserve slot" style="curved=1;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="408" y="519" />
+              <mxPoint x="408" y="549" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Enrollment successful" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Enrollment rejected" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="699" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Notify no available slots" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="227" y="807" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
